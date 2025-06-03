@@ -1,0 +1,154 @@
+/* --- RESET DE ESTILOS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url('../assets/images/campo_header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    background-color: #264653;
+    padding: 15px;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #e9c46a;
+    border-radius: 5px;
+}
+
+/* --- CONTENT SECTIONS --- */
+.content-section {
+    margin: 60px 0;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    color: #264653;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.content-section .section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* --- VIDEO SECTION --- */
+.video-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* --- LISTS --- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #264653;
+    margin: 15px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+ul li:before {
+    content: "✓";
+    font-size: 1.5em;
+    color: #2a9d8f;
+    margin-right: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    .content-section h2 {
+        font-size: 2em;
+    }
+
+    .content-section p {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,48 @@
+/* Cabeçalho */
+header {
+    background-color: #264653;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* Seções de Conteúdo */
+.content-section, .solutions-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Cards de Soluções Urbanas */
+.solutions-section h2 {
+    color: #2a9d8f;
+}
+
+.solutions-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

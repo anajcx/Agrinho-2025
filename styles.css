@@ -1,0 +1,353 @@
+/* --- RESET DE ESTILOS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #555;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    background-color: #264653;
+    padding: 15px;
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Alinha no topo da página */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Garante que a barra ocupe toda a largura */
+    z-index: 1000; /* Garante que a barra fique por cima de outros elementos */
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #e9c46a;
+    border-radius: 5px;
+}
+
+/* --- SEÇÕES DE CONTEÚDO --- */
+.content-section {
+    margin: 60px 0;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    color: #264653;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.content-section .section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* --- SEÇÃO DE VÍDEO --- */
+.video-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* --- LISTAS --- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #264653;
+    margin: 15px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+ul li:before {
+    content: "✓";
+    font-size: 1.5em;
+    color: #2a9d8f;
+    margin-right: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    .content-section h2 {
+        font-size: 2em;
+    }
+
+    .content-section p {
+        font-size: 1.1em;
+    }
+}
+
+/* --- ADICIONANDO ESPAÇO AO CORPO PARA A NAVEGAÇÃO FIXA --- */
+body {
+    padding-top: 80px; /* Ajuste o valor conforme a altura da barra de navegação */
+}
+
+/* --- EFEITO DE TRANSIÇÃO PARA LINK DE NAVEGAÇÃO --- */
+nav a {
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e9c46a;
+    border-radius: 5px;
+}
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo dos Cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #0077b6;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo do Botão Saiba Mais */
+.saiba-mais-btn {
+    display: inline-block;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #005f8d;
+    transform: scale(1.05);
+}
+
+/* Efeitos de Transição e Animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animações de AOS */
+[data-aos="fade-up"] {
+    animation: fadeIn 1s ease-out forwards;
+}
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo dos Cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Para que os cards se ajustem em telas menores */
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Adiciona espaço embaixo do card */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #0077b6;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo do Botão Saiba Mais */
+.saiba-mais-btn {
+    display: inline-block;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #005f8d;
+    transform: scale(1.05);
+}
+
+/* Efeitos de Transição e Animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animações de AOS */
+[data-aos="fade-in"] {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+[data-aos="fade-up"] {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Responsividade: Ajuste em telas menores */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column; /* Coloca os cards em coluna em telas pequenas */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Ajuste para 80% da largura em dispositivos móveis */
+        margin-bottom: 30px;
+    }
+}
